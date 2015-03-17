@@ -45,6 +45,7 @@ int main(int argc, char **argv)
 			/*only need to check already found primes to reduce number of checks*/
 			for(jj = 0; jj < count && ii >= (primes[jj]*primes[jj]); jj++)
 			{	
+				/*can't be a prime if divisible by primes*/
 				if(!(ii%primes[jj]))
 				{
 					isPrime = 0;
